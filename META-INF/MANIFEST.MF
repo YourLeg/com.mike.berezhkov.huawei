@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.mike.berezhkov.huawei
+Bundle-ManifestVersion: 2
+Bundle-Name: com.mike.berezhkov.huawei
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: com.mike.berezhkov.huawei; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.mike.berezhkov.huawei.serializer,
+ com.mike.berezhkov.huawei.parser.antlr.internal,
+ com.mike.berezhkov.huawei.services,
+ com.mike.berezhkov.huawei.scoping,
+ com.mike.berezhkov.huawei.cPoCP.impl,
+ com.mike.berezhkov.huawei.generator,
+ com.mike.berezhkov.huawei.cPoCP,
+ com.mike.berezhkov.huawei.cPoCP.util,
+ com.mike.berezhkov.huawei,
+ com.mike.berezhkov.huawei.parser.antlr,
+ com.mike.berezhkov.huawei.validation
+Import-Package: org.apache.log4j

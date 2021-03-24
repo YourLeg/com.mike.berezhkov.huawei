@@ -8,7 +8,6 @@ target/
 ### Eclipse with Xtext I guess ###
 .settings
 bin/
-META-INF
 src-gen/
 xtext-gen/
 xtend-gen/
