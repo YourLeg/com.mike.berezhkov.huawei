@@ -1,0 +1,27 @@
+grammar com.mike.berezhkov.huawei.CPoCP with org.eclipse.xtext.common.Terminals
+
+generate cPoCP "http://www.mike.com/berezhkov/huawei/CPoCP"
+
+Model:
+	'Courses'':' (courses+=Course ',' )* courses+=Course 
+	'Students'':' (students+=Student ',')* students+=Student 
+	'Scores'':' (scores+=Score ',' )* scores+=Score
+;
+
+Course:
+	name=ID
+;
+
+Student:
+	name=ID
+;
+
+Score:
+	student=[Student] ':' '{'
+		(courseGrade+=CourseGrade ';')+
+	'}'
+;
+
+CourseGrade:
+	course=[Course] ':' (grades+=INT',')* grade+=INT
+;
