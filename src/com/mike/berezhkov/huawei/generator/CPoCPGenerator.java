@@ -18,7 +18,7 @@ import com.mike.berezhkov.huawei.cPoCP.CourseGrade;
 import com.mike.berezhkov.huawei.cPoCP.Score;
 import com.mike.berezhkov.huawei.cPoCP.Student;
 
-public class CPoCPGeneratorJava extends AbstractGenerator{
+public class CPoCPGenerator extends AbstractGenerator{
 
 	@Override
 	public void doGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
