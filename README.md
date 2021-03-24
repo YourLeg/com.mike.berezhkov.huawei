@@ -19,3 +19,6 @@ The importing part is complex and unobvious for me. So, here goes a detailed des
 5. At *Run* choose *Generate CPoCP (2cp) Language Infrastructure* and wait until done.
 6. For all the projects make sure that **src-gen** and **xtend-gen** source folders. Right-click *Build Path -> Use as Source Folder*.
 7. At *Run* choose *Launch Runtime Eclipse*. There are still errors. I don't know, how to fix it.  Wait until done. It will create a new workspace **runtime-EclipseXtext** near your current one. 
+8. Clone [this helper project](https://github.com/YourLeg/AVGGrades) into **runtime-EclipseXtext** workspace. 
+9. Add the helper project in the **runtime-EclipseXtext**.
+10. Everything is done!!
