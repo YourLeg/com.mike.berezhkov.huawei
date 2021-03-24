@@ -6,7 +6,6 @@ target/
 
 
 ### Eclipse with Xtext I guess ###
-.launch
 .settings
 bin/
 META-INF
